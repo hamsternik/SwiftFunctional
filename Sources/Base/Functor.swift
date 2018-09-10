@@ -12,8 +12,8 @@ import Foundation
 protocol Functor {
     
     associatedtype A
-    associatedtype B: Functor
     
-    func fmap<T>(_ by: (A) -> T) -> B where B.A == T
+    /// [Haskell] fmap :: (a -> b) -> f a -> f b
+    func fmap<T, F: Functor>(_ by: (A) -> T) -> F where T == F.A
     
 }

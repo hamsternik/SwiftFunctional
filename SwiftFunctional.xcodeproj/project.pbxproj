@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		6284E2562146CF4A00641F38 /* Functor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6284E2552146CF4A00641F38 /* Functor.swift */; };
+		6284E25A2146DCF000641F38 /* Optional+Functor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6284E2592146DCF000641F38 /* Optional+Functor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6284E2492146CF3500641F38 /* libSwiftFunctor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwiftFunctor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6284E2492146CF3500641F38 /* libSwiftFunctional.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwiftFunctional.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6284E2552146CF4A00641F38 /* Functor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functor.swift; sourceTree = "<group>"; };
+		6284E2592146DCF000641F38 /* Optional+Functor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Functor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +39,7 @@
 		6284E24A2146CF3500641F38 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6284E2492146CF3500641F38 /* libSwiftFunctor.a */,
+				6284E2492146CF3500641F38 /* libSwiftFunctional.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -45,9 +47,26 @@
 		6284E24B2146CF3500641F38 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				6284E2552146CF4A00641F38 /* Functor.swift */,
+				6284E2572146DCD600641F38 /* Base */,
+				6284E2582146DCDE00641F38 /* Extensions */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		6284E2572146DCD600641F38 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6284E2552146CF4A00641F38 /* Functor.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6284E2582146DCDE00641F38 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6284E2592146DCF000641F38 /* Optional+Functor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -63,9 +82,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6284E2482146CF3500641F38 /* SwiftFunctor */ = {
+		6284E2482146CF3500641F38 /* SwiftFunctional */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6284E2522146CF3500641F38 /* Build configuration list for PBXNativeTarget "SwiftFunctor" */;
+			buildConfigurationList = 6284E2522146CF3500641F38 /* Build configuration list for PBXNativeTarget "SwiftFunctional" */;
 			buildPhases = (
 				6284E2452146CF3500641F38 /* Sources */,
 				6284E2462146CF3500641F38 /* Frameworks */,
@@ -75,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftFunctor;
+			name = SwiftFunctional;
 			productName = SwiftFunctor;
-			productReference = 6284E2492146CF3500641F38 /* libSwiftFunctor.a */;
+			productReference = 6284E2492146CF3500641F38 /* libSwiftFunctional.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -95,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6284E2442146CF3400641F38 /* Build configuration list for PBXProject "SwiftFunctor" */;
+			buildConfigurationList = 6284E2442146CF3400641F38 /* Build configuration list for PBXProject "SwiftFunctional" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6284E2482146CF3500641F38 /* SwiftFunctor */,
+				6284E2482146CF3500641F38 /* SwiftFunctional */,
 			);
 		};
 /* End PBXProject section */
@@ -118,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6284E2562146CF4A00641F38 /* Functor.swift in Sources */,
+				6284E25A2146DCF000641F38 /* Optional+Functor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +293,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6284E2442146CF3400641F38 /* Build configuration list for PBXProject "SwiftFunctor" */ = {
+		6284E2442146CF3400641F38 /* Build configuration list for PBXProject "SwiftFunctional" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6284E2502146CF3500641F38 /* Debug */,
@@ -282,7 +302,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6284E2522146CF3500641F38 /* Build configuration list for PBXNativeTarget "SwiftFunctor" */ = {
+		6284E2522146CF3500641F38 /* Build configuration list for PBXNativeTarget "SwiftFunctional" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6284E2532146CF3500641F38 /* Debug */,
